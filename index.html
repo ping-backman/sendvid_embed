@@ -13,21 +13,23 @@
       color: #333;
     }
     h1 { color: #2c3e50; }
-    .link {
-      font-size: 1.2em;
-      margin: 30px;
-    }
-    a {
-      color: #e74c3c;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
+    .video-container {
+      margin: 30px auto;
+      max-width: 640px;
+      background: #000;
     }
   </style>
 </head>
-<script>
-  <iframe width="640" height="360" src="//sendvid.com/embed/dai1ytu4" frameborder="0" allowfullscreen></iframe>
-</script>
+<body>
+  <h1>SendVid Embed Test</h1>
+  
+  <!-- CORRECT: iframe goes in BODY, not in script tag -->
+  <div class="video-container">
+    <iframe width="640" height="360" 
+            src="https://sendvid.com/embed/dai1ytu4" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</body>
 </html>
